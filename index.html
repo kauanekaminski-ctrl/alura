@@ -2,45 +2,67 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
- <head>
-  <meta charset="UTF-8">
-<meta name="viewport" 
- content="width=device-width, 
- initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"  content="width=device-width, initial-scale=1.0">
 <title>Blog</title>
- <style>
- header {
-   background-color: #FADCE6;
-  color: #FFFFFF;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-  border: 5px solid #FFC4D7;
- }
-  main {
-   background-color: #FFFFFF;
-   color: #FADCE6;
-   max-width: 800px;
-   margin: 0 auto;
-   padding: 16px
-  }
-  img {
-   width: 80px;
-   height: 80px;
-  }
-  </style>
+ <style>  
+header{
+background-color:  rgb(0,0,0);
+ color:  rgb(255 250 250);
+ text-align: center;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 16px;
+ border: 5px solid rgb(255 0 0);
+}
+main{
+ display: flex;
+background-color:  rgb(250,250,250);
+ color:  rgb(0 0 0);
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 16px;
+}
+  img {
+  margin-top: 20px;
+  width: 200px;
+   height: 200px;
+  }
+.artigo-autor {
+font-weight: bold;
+}
+ </style>
+ 
 </head>
 <body>
-<header>
-   <h1>Meu blog</h1>
-   <p>Vou compartilhar a história de Jack Risonho</p>
+  <header>  
+<h1>Minha página sobre a história de Jack Risonho</h1>
+<p1>Vou te contar a história de Jack Risonho</p1>
 </header>
-  <main>
-   <img src="images (1).jpeg" alt="">
-   <h2>Meu primeiro post</h2>
-   <p>Por: Kauane </p>
-   <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar a história de Jack Risonho</p>
-  </main>
- </body>
+  <main>
+<img src="images (1).jpeg"
+ alt="Jack Risonho">
+<div>
+<h2>Meu primeiro post</h2>
+  <p class="artigo-autor"> Por: Kauane Kaminski</p>
+<p>Bem vindos aqui vou compartilhar a história de Jack Risonho.</p>
+ <button>👍​​ <span>0</span></button>
+ <button>​👎​​ <span>0</span></button>
+</div>
+  </main>
+</body>
+ <script>
+const botoes = document.querySelectorAll("button");
+
+  botoes.forEach( function(botao){
+botao.addEventListener("click", botaoClicado);
+  function botaoClicado(){
+console.log("fui clicado");
+   let texto = botao.querySelector("span");
+   texto.textContent++;
+  }  
+  })
+ 
+ </script>
 </html>
