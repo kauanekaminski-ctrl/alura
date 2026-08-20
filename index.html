@@ -29,8 +29,10 @@
       box-sizing: border-box;
     }
 
+    /* flex-direction: column força os artigos a ficarem empilhados */
     main {
       display: flex;
+      flex-direction: column; 
       gap: 20px;
       background-color: rgb(250, 250, 250);
       color: rgb(0, 0, 0);
@@ -39,8 +41,12 @@
       padding: 16px;
       box-sizing: border-box;
     }
-    article{
-       display: flex;
+
+    article {
+      display: flex;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
     }
 
     img {
@@ -63,25 +69,26 @@
 
   <main>
     <article>
-        <img src="images (1).jpeg" alt="Jack Risonho">
-        <div>
-          <h2>Meu primeiro post</h2>
-          <p class="artigo-autor">Por: Kauane Kaminski</p>
-          <p>Bem-vindos! Aqui vou compartilhar a história de Jack Risonho.</p>
-          <button>👍 <span>0</span></button>
-          <button>👎 <span>0</span></button>
-        </div>
+      <img src="images (1).jpeg" alt="Jack Risonho">
+      <div>
+        <h2>Meu primeiro post</h2>
+        <p class="artigo-autor">Por: Kauane Kaminski</p>
+        <p>Bem-vindos! Aqui vou compartilhar a história de Jack Risonho.</p>
+        <button>👍 <span>0</span></button>
+        <button>👎 <span>0</span></button>
+      </div>
+    </article>
+
     <article>
-    <article>
-       <img src="images (1).jpeg" alt="Jack Risonho">
-        <div>
-          <h2>Meu segundo post</h2>
-          <p class="artigo-autor">Por: Kauane Kaminski</p>
-          <p>Bem-vindos! Aqui vou compartilhar a história de Jack Risonho.</p>
-          <button>👍 <span>0</span></button>
-          <button>👎 <span>0</span></button>
-        </div>
-    <article>
+      <img src="images (1).jpeg" alt="Jack Risonho">
+      <div>
+        <h2>Meu segundo post</h2>
+        <p class="artigo-autor">Por: Kauane Kaminski</p>
+        <p>Bem-vindos! Aqui vou compartilhar a história de Jack Risonho.</p>
+        <button>👍 <span>0</span></button>
+        <button>👎 <span>0</span></button>
+      </div>
+    </article>
   </main>
 
   <script>
